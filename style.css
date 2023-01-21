@@ -173,6 +173,7 @@ body {
 }
 .attribution{
     text-align: center;
+    align-self: flex-end;
 }
 
 .link:hover{
@@ -181,13 +182,18 @@ body {
 }
 
 @media screen and (min-width:768px) {
+
     body{
+        display: grid;
+        grid-template-columns: 1fr;
         height: 100%;
+        justify-content: flex-end;
     }
 
     .container{
         grid-template-columns: 1fr 1fr 1fr;
         max-width: 800px;
+        justify-self: center;
     }
 
     .card{
@@ -216,8 +222,4 @@ body {
         font-size: 40px;
     }
 
-    .attribution{
-        position: absolute;
-        bottom: 1rem;
-    }
 }
